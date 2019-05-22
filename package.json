@@ -1,7 +1,7 @@
 {
   "name": "json2csv",
-  "version": "0.2.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Convert JSON format files to CSV format.",
   "main": "json2csv.js",
   "scripts": {
     "start": "node json2csv.js",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/tsalvia/json2csv.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "tsalvia",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tsalvia/json2csv/issues"

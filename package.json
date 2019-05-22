@@ -1,6 +1,6 @@
 {
   "name": "json2csv",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "json2csv.js",
   "scripts": {
@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/tsalvia/json2csv#readme",
   "dependencies": {
+    "command-line-args": "^5.1.1",
+    "command-line-usage": "^5.0.5",
     "jquery-csv": "^1.0.3"
   }
 }

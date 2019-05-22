@@ -2,6 +2,13 @@
 
 Convert JSON format files to CSV format.
 
+## How to install
+
+```
+$ git clone https://github.com/tsalvia/json2csv.git
+$ npm install
+```
+
 ## Usage
 
 ```

@@ -1,0 +1,24 @@
+{
+  "name": "json2csv",
+  "version": "0.1.0",
+  "description": "",
+  "main": "json2csv.js",
+  "scripts": {
+    "start": "node json2csv.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsalvia/json2csv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsalvia/json2csv/issues"
+  },
+  "homepage": "https://github.com/tsalvia/json2csv#readme",
+  "dependencies": {
+    "jquery-csv": "^1.0.3"
+  }
+}

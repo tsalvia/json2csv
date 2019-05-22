@@ -58,8 +58,8 @@ function isExistFile(file) {
 }
 
 function printError(msg) {
-    console.error('Error: ' + msg);
-    console.error('For more information, try to use the \'--help\' or \'-h\' option to show help.');
+    console.error('Error:\t' + msg);
+    console.error('\tFor more information, try to use the \'--help\' or \'-h\' option to show help.');
 }
 
 const optionDefinitions = [
@@ -134,7 +134,7 @@ if (options.help) {
 }
 
 if (!options.input) {
-    printError('No JSON file specified.');
+    printError('No JSON file specified. Use the "-- input" or "-i" option.');
     process.exit();
 }
 

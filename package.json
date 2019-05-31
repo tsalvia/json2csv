@@ -1,6 +1,6 @@
 {
   "name": "json2csv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert JSON format files to CSV format.",
   "main": "json2csv.js",
   "scripts": {

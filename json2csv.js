@@ -59,7 +59,7 @@ function isExistFile(file) {
 
 function printError(msg) {
     console.error('Error:\t' + msg);
-    console.error('\tFor more information, try to use the \'--help\' or \'-h\' option to show help.');
+    console.error('\tFor more information, try to use the "--help" or "-h" option to show help.');
 }
 
 const optionDefinitions = [
@@ -88,7 +88,7 @@ const optionDefinitions = [
 const sections = [
     {
         header: 'json2csv',
-        content: 'Convert JSON format files to CSV format.'
+        content: 'Convert JSON format file to CSV format.'
     },
     {
         header: 'Options',
@@ -98,11 +98,11 @@ const sections = [
         header: 'Examples',
         content: [
             {
-                desc: '1. Example of specifying input files only',
+                desc: '1. Specifying input files only.',
                 example: '$ node json2csv.js --input Sample.json'
             },
             {
-                desc: '2. Example of specifying output destination.',
+                desc: '2. Specifying output destination.',
                 example: '$ node json2csv.js --input Sample.json --output output/Sample.csv'
             }
         ]
@@ -115,13 +115,13 @@ try {
 } catch (err) {
     switch (err.name) {
         case 'UNKNOWN_OPTION':
-            printError('Unrecoginzed option \'' + err.optionName + '\'');
+            printError('Unrecoginzed option "' + err.optionName + '"');
             break;
         case 'UNKNOWN_VALUE':
-            printError('Unrecoginzed value \'' + err.value + '\'');
+            printError('Unrecoginzed value "' + err.value + '"');
             break;
         default:
-            printError('\'' + err.name + '\' is unknown error.');
+            printError('"' + err.name + '" is unknown error.');
             break;
     }
     process.exit();
@@ -134,13 +134,13 @@ if (options.help) {
 }
 
 if (!options.input) {
-    printError('No JSON file specified. Use the "-- input" or "-i" option.');
+    printError('No JSON file specified. Use the "--input" or "-i" option.');
     process.exit();
 }
 
 const inputFile = options.input;
 if (!isExistFile(inputFile)) {
-    printError('\'' + inputFile + '\': No such file or directory.');
+    printError('"' + inputFile + '": No such file or directory.');
     process.exit();
 }
 

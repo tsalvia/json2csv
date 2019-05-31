@@ -1,8 +1,8 @@
 # json2csv
 
-Convert JSON format files to CSV format.
+Convert JSON format file to CSV format.
 
-## How to install
+## Build 
 
 ```
 $ git clone https://github.com/tsalvia/json2csv.git
@@ -26,12 +26,12 @@ $ node json2csv.js -i <json_file>
 
 ## Examples
 
-1. Example of specifying input files only.
+1. Specifying input files only.
    ```
    $ node json2csv.js --input Sample.json
    ```
 
-1. Example of specifying output destination.
+1. Specifying output destination.
    ```
    $ node json2csv.js --input Sample.json --output output/Sample.csv
    ```

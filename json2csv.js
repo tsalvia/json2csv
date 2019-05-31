@@ -152,7 +152,7 @@ const outputDir = path.dirname(outputFile);
 if (!fs.existsSync(outputDir))
     fs.mkdirSync(outputDir, { recursive: true });
 
-const json = require(inputFile);
+const json = require(path.resolve(inputFile));
 const csv = json2csv(json);
 const charset = 'utf8';
 fs.writeFileSync(outputFile, csv, charset);
